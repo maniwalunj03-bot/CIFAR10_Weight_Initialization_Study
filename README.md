@@ -6,12 +6,14 @@ PyTorch project analyzing how weight initialization impacts CNN performance on C
 To study the impact of different weight initialization techniques on the training performance, convergence, and final accuracy of a Deep Convolutional Neural Network (CNN) trained on the CIFAR-10 dataset.
 
 🧩 Initializations Compared
-Initialization	        Description	                        Suitable For	           Expected Effect
-Zero	                All weights = 0         	               None	             No learning (symmetry)
-Normal	            Random from Normal(0,1)	               Basic networks	       Unstable gradients
-Xavier (Glorot)	     Scales weights by fan-in/out	          Tanh/Sigmoid	        Balanced gradients
-Kaiming (He)	       Scales by fan-in only	                  ReLU	             Stable gradients, fast learning
-Orthogonal	        Orthogonal matrix initialization	        Deep CNNs	           Preserves variance
+| Initialization      | Description                      | Suitable For   | Expected Effect                 |
+| ------------------- | -------------------------------- | -------------- | ------------------------------- |
+| **Zero**            | All weights = 0                  | None           | No learning (symmetry)          |
+| **Normal**          | Random from Normal(0,1)          | Basic networks | Unstable gradients              |
+| **Xavier (Glorot)** | Scales weights by fan-in/out     | Tanh/Sigmoid   | Balanced gradients              |
+| **Kaiming (He)**    | Scales by fan-in only            | ReLU           | Stable gradients, fast learning |
+| **Orthogonal**      | Orthogonal matrix initialization | Deep CNNs      | Preserves variance              |
+
 ⚙️ Experimental Setup
 
 Dataset: CIFAR-10
