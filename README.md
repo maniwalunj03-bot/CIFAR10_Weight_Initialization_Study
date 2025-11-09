@@ -31,12 +31,14 @@ Epochs: 10
 Device: CPU
 
 📈 Results Overview
-Initialization	Final Test Accuracy (%)	Observation
-Zero	10.00	No learning
-Normal	17.64	Basic improvement
-Xavier	19.24	Stable learning
-Kaiming	20.46	Fastest convergence
-Orthogonal	20.31	Smooth learning
+| Initialization | Final Test Accuracy (%) | Observation         |
+| -------------- | ----------------------- | ------------------- |
+| Zero           | 10.00                   | No learning         |
+| Normal         | 17.64                   | Basic improvement   |
+| Xavier         | 19.24                   | Stable learning     |
+| Kaiming        | **20.46**               | Fastest convergence |
+| Orthogonal     | 20.31                   | Smooth learning     |
+
 🖼️ Visual Results
 🔹 Accuracy Progression Heatmap
 
